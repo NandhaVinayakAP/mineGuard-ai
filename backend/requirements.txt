@@ -1,0 +1,24 @@
+# MineGuard AI — Phase 1 backend dependencies
+# Install with: pip install -r requirements.txt
+#
+# Notes:
+# - torch is installed as the CPU build by default via PyPI on most platforms.
+#   For a GPU build, install torch separately following https://pytorch.org
+#   BEFORE installing this file, then re-run pip install -r requirements.txt.
+# - ultralytics will auto-download yolov8n.pt on first run if it is not
+#   already present in backend/models/.
+
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.6
+websockets>=13.1
+python-multipart>=0.0.9
+pydantic>=2.9.2
+
+opencv-python>=4.10.0
+numpy>=1.26.4
+
+ultralytics>=8.2.0
+torch>=2.2
+torchvision>=0.17
+
+supervision>=0.23.0
